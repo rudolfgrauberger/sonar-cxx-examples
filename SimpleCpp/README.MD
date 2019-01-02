@@ -4,7 +4,7 @@ Das Projekt ist so minimalistisch, dass nichmals Defines und Includes angegeben/
 
 Mit dem nachfolgendem Befehl wird das Projekt mit MSBUILD mit der Konfiguration "Release" kompiliert und die Ausgabe zusätzlich in eine Datei geloggt.
 ```PowerShell
-PS > cd <project root>\simple
+PS > cd <project root>\SimpleCpp
 PS > MSBuild.exe .\SimpleCpp.vcxproj /t:rebuild /p:Configuration=Release /fileLogger "/fileLoggerParameters:LogFile=buildlog.log;Verbosity=normal;Encoding=UTF-8"
 ```
 

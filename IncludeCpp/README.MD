@@ -6,8 +6,8 @@ Dieses Projekt erweitert das "SimpleCpp" darum, dass Include-Verzeichnisse benö
 Mit dem nachfolgendem Befehl wird das Projekt mit MSBUILD mit der Konfiguration "Release" kompiliert und die Ausgabe zusätzlich in eine Datei geloggt. Hier nehmen wir jetzt mal bewusst die gleichen Einstellungen für den Logger wie bei dem SimpleCpp-Projekt.
 
 ```PowerShell
-PS > cd <project root>\simple
-PS > MSBuild.exe .\SimpleCpp.vcxproj /t:rebuild /p:Configuration=Release /fileLogger "/fileLoggerParameters:LogFile=buildlog.log;Verbosity=normal;Encoding=UTF-8"
+PS > cd <project root>\IncludeCpp
+PS > MSBuild.exe .\IncludeCpp.vcxproj /t:rebuild /p:Configuration=Release /fileLogger "/fileLoggerParameters:LogFile=buildlog.log;Verbosity=normal;Encoding=UTF-8"
 ```
 
 Mit dem nachfolgendem Befehl wird der Sonner-Scanner ausgeführt und das Ergebnis auf dem angegebenen Host (`sonar.host.url`) und dem Projekt-Schlüssel (`sonar.projectKey`) hochgeladen.
@@ -39,8 +39,8 @@ Wir haben ja bereit in der Visual Studio Projektdatei (.vcxproj) alles was zum K
 MSBuild ist in der Lage diese Informationen als Ausgabe auszugeben, allerdings erst ab der **Verbosity** `detailed`. Aus diesem Grund müssen wir beim Aufruf von MSBuild `normal` durch `detailed` ersetzen.
 
 ```PowerShell
-PS > cd <project root>\simple
-PS > MSBuild.exe .\SimpleCpp.vcxproj /t:rebuild /p:Configuration=Release /fileLogger "/fileLoggerParameters:LogFile=buildlog.log;Verbosity=detailed;Encoding=UTF-8"
+PS > cd <project root>\IncludeCpp
+PS > MSBuild.exe .\IncludeCpp.vcxproj /t:rebuild /p:Configuration=Release /fileLogger "/fileLoggerParameters:LogFile=buildlog.log;Verbosity=detailed;Encoding=UTF-8"
 ```
 
 Da der Sonar-Scanner auf der Basis der Log-Datei arbeitet, müssen wir diesen jetzt nochmal ausführen:
