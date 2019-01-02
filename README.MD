@@ -1,6 +1,6 @@
 # Native C++ Beispiele mit dem SonarQube C++ plugin (Community)
 
-Dieses Repository beinhaltet einige C++ Visual Studio-Projekte. An diesen Projekten zeige ich wie man auch C++-Projekte mit der statischen Code-Analyse managen und auswerten kann.
+Dieses Repository beinhaltet einige C++ Visual Studio-Projekte. An diesen Projekten wird gezeigt wie man auch C++-Projekte mit der statischen Code-Analyse-Umgebung SonarQube managen und auswerten kann.
 
 Außerdem können diese Projekte als Basis für Test-Szenarien genommen werden, da diese bereits funktionieren. Dabei spielt es überhaupt keine Rolle ob man damit sich damit einarbeiten oder ein Issue beschreiben möchte.
 
