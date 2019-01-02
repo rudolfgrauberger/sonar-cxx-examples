@@ -31,4 +31,5 @@ In der Anleitung [Installation into Docker Sonarqube Image](https://github.com/S
 Hier bereits einige Projekte:
 - SimpleCpp (einfachstes C++-Programm)
 - IncludeCpp (nutzt ein Include)
+- FolderStructureCpp (Nutzt Unterverzeichnisse für Quelltexte)
 
